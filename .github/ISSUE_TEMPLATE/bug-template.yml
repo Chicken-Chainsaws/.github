@@ -49,7 +49,6 @@ body:
       label: Platform
       description: Which platform is affected?
       options:
-        - Any/All
         - iOS
         - Android
         - Web/Frontend
