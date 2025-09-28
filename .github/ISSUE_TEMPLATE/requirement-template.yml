@@ -1,84 +1,26 @@
 name: Requirement
-description: Document a requirement or specification
+description: Document a requirement specification
 title: "[REQ] "
 labels: []
 type: requirement
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for documenting a requirement!
-
   - type: textarea
-    id: requirement-statement
+    id: rationale
     attributes:
-      label: Requirement Statement
-      description: Clear statement of what is required
-      placeholder: State the requirement clearly and concisely...
+      label: Rationale
+      description: Why the requirement exists; the value, context, or problem it addresses
+      placeholder: Explain why this requirement is needed...
     validations:
       required: true
 
   - type: textarea
-    id: context
+    id: verification-criteria
     attributes:
-      label: Context
-      description: Background information and why this requirement exists
-      placeholder: Explain the background, business need, or user story...
+      label: Verification Criteria
+      description: List of criteria necessary for this requirement to be considered fulfilled
+      placeholder: |
+        - Criterion 1
+        - Criterion 2
+        - Criterion 3
     validations:
       required: true
-
-  - type: checkboxes
-    id: acceptance-criteria
-    attributes:
-      label: Acceptance Criteria
-      description: What criteria must be met to satisfy this requirement?
-      options:
-        - label: Add your first criterion here
-        - label: Add your second criterion here
-        - label: Add your third criterion here
-
-  - type: dropdown
-    id: requirement-type
-    attributes:
-      label: Requirement Type
-      description: What type of requirement is this?
-      options:
-        - Functional
-        - Non-Functional
-        - Business
-        - Technical
-        - Security
-        - Performance
-        - Usability
-        - Compliance
-        - Integration
-        - Other
-    validations:
-      required: true
-
-  - type: dropdown
-    id: priority
-    attributes:
-      label: Priority
-      description: How critical is this requirement?
-      options:
-        - Must Have
-        - Should Have
-        - Could Have
-        - Won't Have (this time)
-    validations:
-      required: true
-
-  - type: textarea
-    id: dependencies
-    attributes:
-      label: Dependencies
-      description: What other requirements or features does this depend on?
-      placeholder: List any dependencies, prerequisites, or related requirements...
-
-  - type: textarea
-    id: notes
-    attributes:
-      label: Additional Notes
-      description: Additional specifications, constraints, or considerations
-      placeholder: Add any relevant details, constraints, or technical specifications...
