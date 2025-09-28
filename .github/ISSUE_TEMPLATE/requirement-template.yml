@@ -2,6 +2,7 @@ name: Requirement
 description: Document a requirement or specification
 title: "[REQ] "
 labels: []
+type: requirement
 body:
   - type: markdown
     attributes:
