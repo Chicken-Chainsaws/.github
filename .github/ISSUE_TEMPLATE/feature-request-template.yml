@@ -2,6 +2,7 @@ name: Feature
 description: Request a new feature using a structured form
 title: "[FEATURE] "
 labels: []
+type: feature
 body:
   - type: markdown
     attributes:

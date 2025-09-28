@@ -2,6 +2,7 @@ name: Enhancement
 description: Improve an existing feature
 title: "[ENHANCEMENT] "
 labels: []
+type: enhancement
 body:
   - type: markdown
     attributes:

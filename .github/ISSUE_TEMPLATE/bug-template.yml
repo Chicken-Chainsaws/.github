@@ -2,6 +2,7 @@ name: Bug
 description: Report a bug or defect using a structured form
 title: "[BUG] "
 labels: []
+type: bug
 body:
   - type: textarea
     id: bug-description

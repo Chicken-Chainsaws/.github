@@ -2,6 +2,7 @@ name: Chore
 description: Maintenance tasks and housekeeping
 title: "[CHORE] "
 labels: []
+type: chore
 body:
   - type: markdown
     attributes:
