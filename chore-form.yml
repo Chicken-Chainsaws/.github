@@ -1,0 +1,61 @@
+name: Chore
+description: Maintenance tasks and housekeeping
+title: "[CHORE] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping maintain the project!
+
+  - type: textarea
+    id: task-description
+    attributes:
+      label: Task Description
+      description: What needs to be done?
+      placeholder: Describe the maintenance task...
+    validations:
+      required: true
+
+  - type: textarea
+    id: why-matters
+    attributes:
+      label: Why This Matters
+      description: Brief explanation of why this maintenance is needed
+      placeholder: Explain the importance or impact...
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope
+      description: Break down the task into actionable items
+      options:
+        - label: Add your first task here
+        - label: Add your second task here
+        - label: Add your third task here
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component/Area
+      description: Which part of the project does this affect?
+      options:
+        - Frontend
+        - Backend
+        - Database
+        - CI/CD
+        - Documentation
+        - Testing
+        - Dependencies
+        - Security
+        - Performance
+        - Other
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Any additional context or considerations
+      placeholder: Add any relevant details, constraints, or considerations...
