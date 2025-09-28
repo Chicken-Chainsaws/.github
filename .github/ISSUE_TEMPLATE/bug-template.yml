@@ -1,13 +1,8 @@
-name: Bug Report (Form)
+name: Bug
 description: Report a bug or defect using a structured form
 title: "[BUG] "
 labels: []
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to report a bug!
-
   - type: textarea
     id: bug-description
     attributes:
@@ -28,7 +23,7 @@ body:
         3. Scroll down to '....'
         4. See error
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: expected-behavior
@@ -37,7 +32,7 @@ body:
       description: What you expected to happen
       placeholder: Describe what you expected...
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: actual-behavior
@@ -46,7 +41,7 @@ body:
       description: What actually happened
       placeholder: Describe what actually happened...
     validations:
-      required: true
+      required: false
 
   - type: dropdown
     id: platform
@@ -54,6 +49,7 @@ body:
       label: Platform
       description: Which platform is affected?
       options:
+        - Any/All
         - iOS
         - Android
         - Web/Frontend
@@ -61,7 +57,7 @@ body:
         - Database
         - Other
     validations:
-      required: true
+      required: false
 
   - type: input
     id: version
@@ -69,10 +65,3 @@ body:
       label: Version/Branch
       description: What version or branch are you using?
       placeholder: "e.g., v1.2.3, main branch"
-
-  - type: textarea
-    id: additional-context
-    attributes:
-      label: Additional Context
-      description: Any other context, screenshots, or logs
-      placeholder: Add any other context about the problem here...
