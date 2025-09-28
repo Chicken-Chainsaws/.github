@@ -8,7 +8,7 @@ body:
     id: rationale
     attributes:
       label: Rationale
-      description: Why the requirement exists; the value, context, or problem it addresses
+      description: Requirement justification; why is this requiremented valuable or necessary?
       placeholder: Explain why this requirement is needed...
     validations:
       required: true
