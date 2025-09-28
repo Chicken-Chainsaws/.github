@@ -1,6 +1,6 @@
 name: Bug
 description: Report a bug or defect using a structured form
-title: "[BUG] "
+title: ""
 labels: []
 type: bug
 body:

@@ -1,58 +1,14 @@
 name: Feature
 description: Request a new feature using a structured form
-title: "[FEATURE] "
+title: ""
 labels: []
 type: feature
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for suggesting a new feature!
-
   - type: textarea
     id: feature-description
     attributes:
       label: Feature Description
-      description: What new feature would you like to see?
+      description: Description of new feature
       placeholder: Describe the feature...
     validations:
       required: true
-
-  - type: textarea
-    id: use-case
-    attributes:
-      label: Use Case
-      description: Who would use this and why?
-      placeholder: Explain the use case...
-    validations:
-      required: true
-
-  - type: checkboxes
-    id: acceptance-criteria
-    attributes:
-      label: Acceptance Criteria
-      description: What criteria must be met for this feature to be complete?
-      options:
-        - label: Add your criteria here
-        - label: Add another criterion
-        - label: Add a third criterion
-
-  - type: dropdown
-    id: priority
-    attributes:
-      label: Priority
-      description: How important is this feature?
-      options:
-        - Low
-        - Medium
-        - High
-        - Critical
-    validations:
-      required: true
-
-  - type: textarea
-    id: additional-context
-    attributes:
-      label: Additional Context
-      description: Mockups, examples, or references that help explain the feature
-      placeholder: Add any additional context here...

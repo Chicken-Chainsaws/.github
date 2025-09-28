@@ -1,27 +1,13 @@
 name: Enhancement
 description: Improve an existing feature
-title: "[ENHANCEMENT] "
+title: ""
 labels: []
 type: enhancement
-body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for suggesting an improvement!
-
-  - type: input
-    id: current-feature
-    attributes:
-      label: Current Feature
-      description: What feature are you looking to enhance?
-      placeholder: "e.g., User authentication, photo upload, etc."
-    validations:
-      required: true
-
+body: 
   - type: textarea
-    id: proposed-improvement
+    id: proposed-enhancement
     attributes:
-      label: Proposed Improvement
+      label: Proposed Enhancement
       description: How should it be improved?
       placeholder: Describe the enhancement in detail...
     validations:
@@ -34,50 +20,4 @@ body:
       description: What value does this enhancement provide?
       placeholder: Explain the benefits to users, performance, maintainability, etc...
     validations:
-      required: true
-
-  - type: dropdown
-    id: priority
-    attributes:
-      label: Priority
-      description: How important is this enhancement?
-      options:
-        - Low
-        - Medium
-        - High
-        - Critical
-    validations:
-      required: true
-
-  - type: dropdown
-    id: component
-    attributes:
-      label: Component/Platform
-      description: Which component does this enhancement affect?
-      options:
-        - iOS
-        - Android
-        - Web/Frontend
-        - Backend
-        - Database
-        - API
-        - Authentication
-        - Camera/Photo
-        - Location/Maps
-        - Notifications
-        - UI/UX
-        - Other
-
-  - type: textarea
-    id: implementation-notes
-    attributes:
-      label: Implementation Notes
-      description: Any technical considerations or constraints
-      placeholder: Technical details, constraints, dependencies, etc...
-
-  - type: textarea
-    id: additional-context
-    attributes:
-      label: Additional Context
-      description: Screenshots, examples, or references
-      placeholder: Add mockups, examples, links, or other supporting materials...
+      required: false
